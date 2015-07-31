@@ -1,4 +1,4 @@
-coloroptical.github.com
+hoteia.github.com
 ==================
 
 ColorOptical : gh-pages
