@@ -1,2 +1,4 @@
-# coloroptical.github.com
 coloroptical.github.com
+==================
+
+ColorOptical : gh-pages
