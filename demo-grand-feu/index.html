@@ -792,11 +792,15 @@ Enfant 160 € HT (192 € TTC)
 
     <!-- Script to Activate Tubular jQuery Plugin - Use this script if you want to use a YouTube video as a background video. -->
     <script>
-    $('.video-bg').tubular({
-        videoId: 'FK3M9plB3bE',
-        mute: true
-    }).playVideo();
-    </script>
+		(function($){
+			$(document).ready(function(){
+				$('.video-bg').tubular({
+					videoId: 'FK3M9plB3bE',
+					mute: true
+				});
+			}); // End document ready
+		})(this.jQuery);
+</script>
 
 </body>
 
