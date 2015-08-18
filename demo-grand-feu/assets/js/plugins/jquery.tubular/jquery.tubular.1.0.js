@@ -13,14 +13,11 @@
 ;(function ($, window) {
 
     // test for feature support and return if failure
-
-    // kill for mobile devices
-    var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     
     // defaults
     var defaults = {
         ratio: 16/9, // usually either 4/3 or 16/9 -- tweak as needed
-        videoId: 'FK3M9plB3bE', // toy robot in space is a good default, no?
+        videoId: 'ZCAnLxRvNNc', // toy robot in space is a good default, no?
         mute: true,
         repeat: true,
         width: $(window).width(),
@@ -31,8 +28,7 @@
         volumeUpClass: 'tubular-volume-up',
         volumeDownClass: 'tubular-volume-down',
         increaseVolumeBy: 10,
-        start: 0,
-        minimumSupportedWidth: 600
+        start: 0
     };
 
     // methods
@@ -43,7 +39,7 @@
             $node = $(node); // cache wrapper node
 
         // build container
-        var tubularContainer = '<div id="tubular-container" style="overflow: hidden; position: absolute; z-index: 1; width: 100%; height: 100%"><div id="tubular-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 2; position: absolute; left: 0; top: 0;"></div>';
+        var tubularContainer = '<div id="tubular-container" style="overflow: hidden; position: fixed; z-index: 1; width: 100%; height: 100%"><div id="tubular-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 2; position: absolute; left: 0; top: 0;"></div>';
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
         $('html,body').css({'width': '100%', 'height': '100%'});

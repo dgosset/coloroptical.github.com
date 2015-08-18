@@ -631,8 +631,7 @@ Enfant 160 € HT (192 € TTC)
                 </div>
             </div>
         </section>
-<p id="video-controls" class="black-65">Video controls:<br /><a href="#" class="tubular-play">Play</a> | <a href="#" class="tubular-pause">Pause</a> | <a href="#" class="tubular-volume-up">Volume Up</a> | <a href="#" class="tubular-volume-down">Volume Down</a> | <a href="#" class="tubular-mute">Mute</a></p>
-	
+
         <footer class="footer-1">
             <div class="upper">
                 <div class="container">
@@ -793,16 +792,10 @@ Enfant 160 € HT (192 € TTC)
 
     <!-- Script to Activate Tubular jQuery Plugin - Use this script if you want to use a YouTube video as a background video. -->
     <script>
-		(function($){
-			$(document).ready(function(){
-				$('.video-bg').tubular({
-					videoId: 'FK3M9plB3bE',
-					mute: true
-				});
-				$('.tubular-play').click();
-				
-			}); // End document ready
-		})(this.jQuery);
+		$('document').ready(function() {
+			var options = { videoId: 'FK3M9plB3bE', mute: true };
+			$('.video-bg').tubular(options);
+		});
 </script>
 
 </body>
