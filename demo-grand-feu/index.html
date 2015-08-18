@@ -21,8 +21,6 @@
     <!-- Retina Images Plugin -->
     <script src="assets/js/plugins/retina/retina.min.js"></script>
 
-	<link href="assets/plugins/YTPlayer/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
-	
     <!-- Plugin CSS -->
     <link href="assets/css/plugins/hover/hover.min.css" rel="stylesheet">
     <link href="assets/css/plugins/owl.carousel/owl.carousel.css" rel="stylesheet">
@@ -107,7 +105,7 @@
             <!-- /.container -->
         </nav>
 
-        <header id="bgndVideo" class="video-bg player" data-property="{videoURL:'https://www.youtube.com/watch?v=FK3M9plB3bE',containment:'#bgndVideo',autoPlay:true, mute:true, startAt:0, opacity:1}">
+        <header class="video-bg">
             <div class="intro-video intro-dark-bg container">
                 <div class="overlay"></div>
                 <div class="intro-body" data-scrollreveal="move 0 over 1.5s">
@@ -153,8 +151,6 @@
 							<p>
 							C’est un gigantesque spectacle pyrotechnique, qui se déroule ce samedi là, entre 21h et 23h, et qui rassemble jusqu’à 23000 personnes. 
 							</p>
-	
-
                     </div>
                 </div>
             </div>
@@ -778,12 +774,7 @@ Enfant 160 € HT (192 € TTC)
     <script src="assets/js/plugins/jquery.fitvids/jquery.fitvids.js"></script>
     <script src="assets/js/plugins/jquery.fs.wallpaper/jquery.fs.wallpaper.min.js"></script>
     <script src="assets/js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-
-	<!--
     <script src="assets/js/plugins/jquery.tubular/jquery.tubular.1.0.js"></script>
--->
-    <script src="assets/plugins/YTPlayer/jquery.mb.YTPlayer.min.js"></script>
-
     <script src="assets/js/plugins/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/js/plugins/scrollReveal/scrollReveal.js"></script>
     <script src="assets/js/plugins/stellar/stellar.js"></script>
@@ -801,16 +792,10 @@ Enfant 160 € HT (192 € TTC)
 
     <!-- Script to Activate Tubular jQuery Plugin - Use this script if you want to use a YouTube video as a background video. -->
     <script>
-		/*
 		$('document').ready(function() {
 			var options = { videoId: 'FK3M9plB3bE', mute: true };
 			$('.video-bg').tubular(options);
 		});
-		*/
-		$('document').ready(function() {
-			$(".player").YTPlayer();
-		});
-		
 </script>
 
 </body>
