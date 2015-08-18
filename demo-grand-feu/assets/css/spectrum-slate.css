@@ -1351,7 +1351,9 @@ a.light-text:focus {
 }
 .aside-overlay,
 .section-overlay {
+	/*
   background-color: rgba(74, 133, 143, 0.8);
+  */
 }
 .aside-overlay {
   padding: 50px 0;
